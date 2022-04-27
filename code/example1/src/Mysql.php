@@ -6,6 +6,10 @@ class Mysql {
 
     public static function php_bergen_connect()
     {
+        $host = '';
+        $user = '';
+        $pass = '';
+        $db = '';
         include_once __DIR__ . '/../setup.php';
         $db = mysqli_connect($host, $user, $pass, $db);
 
