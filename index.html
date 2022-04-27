@@ -16,45 +16,108 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h2>PHP Bergen - Refactoring</h2>
-					<p>@steinmb</p>
-				</section>
+				<section data-markdown>
+  					<textarea data-template>
 
-				<section>
-					<h2>PHPUnit</h2>
-					<p>Install dev packages</p>
-					<pre><code class="json">
-{
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
-    }
-}
-					</code></pre>
-					<p>Other examples</p>
-					<pre><code class="bash">
+						# PHP Bergen
+						## Refactoring
+						### @steinmb
+						---
+						# Entropy
+						Technical debt / Code rot
+
+						When any change gets hard
+						---
+						# When did this happened?
+						---
+						## Every one do their best
+						---
+						## Time to get it done. Fix properly later.
+						---
+						## Lack of understanding what this leads to.
+						---
+						## Never stops for refactoring.
+						---
+						## Resembles a monolith
+						---
+						## No tests
+						---
+						Further reading
+						Ref: [refactoring.guru](https://refactoring.guru/refactoring/technical-debt)
+						---
+						# Legacy application
+						Poorly organized.
+						---
+						# Call stack
+						![Call stack visualization](/media/Call-graph-visualizations-Modular-system-left-versus-spaghetti-code-right.png)
+
+						Ref: [https://doi.org/10.1016/j.entcs.2009.02.066](https://www.researchgate.net/publication/220369791_A_Framework_for_Reverse_Engineering_Large_C_Code_Bases)
+						---
+						# Legacy application
+						No tests and untestable
+						---
+						# Legacy application
+						Long function
+						---
+						# Legacy application
+						Globals and super globals
+						---
+						# Legacy application
+						Primitives everywhere
+						---
+						## Further reading
+						Ref: [Modernizing Legacy Applications In PHP](https://leanpub.com/mlaphp)
+						---
+						# Call stack
+						Call graph visualization - Large C++ application
+						Ref: https://www.researchgate.net/publication/220369791_A_Framework_for_Reverse_Engineering_Large_C_Code_Bases
+						---
+						# Refactoring
+						Rewrite or Refactor?
+						---
+						## What does it mean?
+						---
+						## Keep 'Em Separated
+						No new features
+						---
+						## Further reading
+						Ref: [Refactoring - Martin Fowler, with Kent Beck](https://refactoring.com/)
+						---
+
+						# Tests your code
+[PHPUnit testing framwork](https://phpunit.de/)
+						<pre><code class="bash">
+composer require --dev phpunit/phpunit ^9.5
+						</code></pre>
+
+[Pest testing framework](https://pestphp.com/)
+						<pre><code class="bash">
 composer require pestphp/pest --dev --with-all-dependencies
 					</code></pre>
-				</section>
+---
 
-				<section>
-					<h2>Autoloading</h2>
-					<p><a href="https://www.php-fig.org/psr/psr-4/">PSR-4</a></p>
-				</section>
+					# Autoloading
+[PSR-4](https://www.php-fig.org/psr/psr-4)
+---
 
-				<section>
-					<h2>Reading list</h2>
-					<ul>
-						<li></li>
-					</ul>
-				</section>
+					# Further reading
 
-				<section>
-					<h2>Spørsmål?</h2>
-					<img src="media/highfive.jpg">
-				</section>
+* https://refactoring.com/
+* [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)
+  by Robert C. Martin (Uncle Bob)
+* Clean Architecture: A Craftsman’s Guide to Software Structure and Design
+  by Robert C. Martin (Uncle Bob)
+* Object Design Style Guide - Matthias Noback”
+---
+						# Talk and drink
 
-			</div>
+  </textarea>
+
+					<section data-markdown>
+
+  <textarea data-template>
+  </textarea>
+
 		</div>
 
 		<script src="dist/reveal.js"></script>
