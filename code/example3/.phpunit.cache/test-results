@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Phpbergen\\UserTest::testPhp_bergen_create_user":4,"UserTest::testPhp_bergen_create_user":3,"UserTest::testShortName":3},"times":{"Phpbergen\\UserTest::testPhp_bergen_create_user":0.021,"UserTest::testPhp_bergen_create_user":0.007,"UserTest::testShortName":0.015,"UserTest::testCreateNewUser":0.007}}

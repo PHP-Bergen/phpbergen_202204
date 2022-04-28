@@ -8,6 +8,7 @@
         "phpunit/phpunit": "^9.5"
     },
   "require": {
-    "ext-mysqli": "*"
+    "ext-mysqli": "*",
+    "php": ">=8.1"
   }
 }

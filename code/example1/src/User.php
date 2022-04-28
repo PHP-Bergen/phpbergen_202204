@@ -8,5 +8,4 @@ class User {
     {
         return Mysql::php_bergen_insert_user($first, $last);
     }
-
 }

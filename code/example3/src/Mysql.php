@@ -1,24 +1,23 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Phpbergen;
 
 class Mysql {
 
-    public static function php_bergen_connect()
+    public static function connect()
     {
         $host = '';
         $user = '';
         $pass = '';
         $db = '';
         include_once __DIR__ . '/../setup.php';
-        $db = mysqli_connect($host, $user, $pass, $db);
 
-        return $db;
+        return mysqli_connect($host, $user, $pass, $db);
     }
 
-    public static function php_bergen_insert_user($first, $last_name)
+    public static function createUser($first, $last_name)
     {
-        $db = self::php_bergen_connect();
+        $db = self::connect();
         mysqli_query($db, "INSERT INTO user (first, lastname) VALUES ('$first' , '$last_name')");
         $id = mysqli_insert_id($db);
         $results = mysqli_query($db, "SELECT uid, first, lastname FROM user WHERE uid = $id");

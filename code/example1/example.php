@@ -1,7 +1,13 @@
 <?php declare(strict_types=1);
 
 /**
- * @file Create user.
+ * @file Create a user in Mysql.
+ *
+ * Move functions to classes as static methods.
+ * Introduce namespaces.
+ * Introduce PSR-4 autoloading.
+ * PSR-12 formatting.
+ * ext-mysqli added as dependency to composer.json.
  */
 
 use Phpbergen\User;
