@@ -14,6 +14,7 @@
  *  - Get rid of hidden User dependency to the db.
  *  - Get rid of the last include statement.
  *  - Replace Mysql with generic PDO.
+ *  - PHPUnit tests should use a datbase mock object create entries the real db.
  */
 
 use Phpbergen\User\User;
